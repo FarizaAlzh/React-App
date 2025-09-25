@@ -1,0 +1,48 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.about-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.about-main {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  margin-top: 0;
+}
+
+.about-text ul {
+  padding-left: 20px;
+}

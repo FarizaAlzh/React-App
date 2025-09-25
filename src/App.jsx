@@ -6,10 +6,9 @@ import AboutUs from './components/AboutUs';
 
   function App() {
     return (
-      <div className='aboutUs'>
+      <div className='App'>
         <AboutUs />
       </div>
     );
   }
-
   export default App;
