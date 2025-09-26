@@ -5,17 +5,11 @@ function AboutUs() {
     <div className="about-container">
       <div className="about-header">WOW, a whole page just about me!</div>
       <div className="about-main">
-        <div 
-          className="about-photo" 
-          style={{ backgroundImage: "url('photos/me.png')" }} 
-        ></div>
+        <img className='about-photo' src='photos/my.png' alt='myPhoto'/>
         <div className="about-text">
-          <h3>About Me</h3>
+          <h3>Me talking about myself</h3>
           <p>
-            My name is Alzhan Fariza, I’m 20 years old and from Pavlodar. 
-            I study at the Kazakh-British Technical University in the School of Information Technology.
-            Currently, I am a third-year student. This semester I chose to study the React framework 
-            because I want to try myself in this sphere. 
+            My name is Alzhan Fariza. I’m 20 years old and from Pavlodar. I study at the Kazakh-British Technical University in the School of Information Technology. I am currently a third-year student. This semester, I chose to study the React framework because I want to try working in this field. 
           </p>
           <h3>Fun Facts About Me</h3>
           <ul>

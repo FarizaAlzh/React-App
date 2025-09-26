@@ -1,9 +1,9 @@
-body, html {
-  margin: 0;
-  padding: 0;
+html, body {
+  margin: 0%;
+  padding: 0%;
   height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: f0f0f0;
 }
 
 .about-container {
@@ -13,11 +13,12 @@ body, html {
 }
 
 .about-header {
+  background-color: rgb(4, 214, 233);
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 
 .about-main {
@@ -27,12 +28,11 @@ body, html {
 }
 
 .about-photo {
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
-  background-size: cover;
-  background-position: center;
-  margin-right: 20px;
+  width: 250px;
+  height: 250px;
+  background-color: bisque;
+  margin-right: 30px;
+  border-radius: 8px;
 }
 
 .about-text {
@@ -41,6 +41,7 @@ body, html {
 
 .about-text h3 {
   margin-top: 0;
+  text-decoration: underline;
 }
 
 .about-text ul {
