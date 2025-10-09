@@ -1,6 +1,7 @@
 // это отвечает за локигу - кнопку, загрузку, хранение списка
 import React, { useState } from "react";
 import '../styles/DogsList.css'
+import DogsCard from "./DogsCard";
 
 
 function DogsList() {
@@ -34,7 +35,7 @@ function DogsList() {
                 } 
             
                 if(newDogs.length === 0){
-                    throw new Error("Не удалось получить изображение. Попробуйте еще раз.")
+                    throw new Error("Не удалось получить изображения. Попробуйте ещё раз.")
                 }
 
                 setDogs(newDogs);
@@ -51,10 +52,17 @@ function DogsList() {
             <h2>Random Dog Gallery</h2>
 
         <button onClick={() => loadDogs(5)} disabled={loading}>
-            {loading ? "Loading.." : "Load Dogs"}
+            {loading ? "Loading..." : "Load Dogs"}
         </button>
 
-        
+        {error && <p className="error-message">{error}</p>}
+
+        <ul className="dogs-list">
+            {dogs.map((url , index) => (
+                <DogsCard key={url || index} url={url} />
+            ))}
+        </ul>
+
 
         </div>
     );
