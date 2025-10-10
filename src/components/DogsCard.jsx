@@ -4,7 +4,7 @@ import '../styles/DogsCard.css'
 function DogsCard ({url}) {
     return (
         <li className='dog-card'>
-            <img src={url} alt='random dog' loading='lazy'></img>
+            <img src={url} alt='random dog'></img>
         </li>
     );
 }
