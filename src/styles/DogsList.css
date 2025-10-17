@@ -45,12 +45,13 @@ body {
   
   .dogs-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px)); 
     gap: 20px;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    justify-content: center; 
   }
   
